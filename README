@@ -1,0 +1,18 @@
+https://github.com/sepehr-laal/livecam
+http://brewformulas.org/Gstreamer
+
+brew install gstreamer
+...
+brew reinstall gst-plugins-bad —with-applemedia
+
+https://gstreamer.freedesktop.org/documentation/plugins.html
+
+gst-launch-1.0 avfvideosrc capture-screen=true ! videoscale ! videoconvert ! video/x-raw,width=640,height=480 ! osxvideosink
+
+gst-launch-1.0 videotestsrc is-live=true ! x264enc ! qtmux ! filesink location=test.mp4
+
+gst-launch-1.0 avfvideosrc is-live=true ! videoscale ! videoconvert ! video/x-raw,width=640,height=480 ! osxvideosink
+
+gst-launch-1.0 avfvideosrc device-index=0 ! "video/x-raw(memory:GLMemory),width=1280,height=720" ! glimagesink
+
+gst-launch-1.0 avfvideosrc device-index=0 ! videoscale ! videoconvert ! video/x-raw,width=640,height=480 ! osxvideosink
