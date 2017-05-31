@@ -1,7 +1,8 @@
 # livecam-macos
 
-This repos is extended from [livecam](https://github.com/sepehr-laal/livecam), and has correction to well-run on MacOS.
+This repos is extended from [livecam](https://github.com/sepehr-laal/livecam), and has correction to well-run on MacOS using Plugin avfvideosrc.
 
+line [183](https://github.com/kaikyle7997/livecam-macos/blob/master/node_modules/livecam/livecam.js#L183) in ./node_modules/livecam/livecam.js
 
 ## Installation via Mac Brew
 
