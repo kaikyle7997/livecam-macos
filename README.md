@@ -14,7 +14,6 @@ brew reinstall gst-plugins-bad —with-applemedia
 All plugins required are gstreamer, gst-plugins-bad, gst-plugins-base, gst-plugins-good, and gst-plugins-ugly.
 
 Documentation
-
 http://brewformulas.org/Gstreamer
 
 
@@ -35,6 +34,5 @@ gst-launch-1.0 avfvideosrc device-index=0 ! videoscale ! videoconvert ! video/x-
 ```
 
 Documentation 
-
 https://gstreamer.freedesktop.org/documentation/plugins.html
 
